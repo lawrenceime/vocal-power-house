@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsappButton";
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <Navbar />
         {children}
+        <WhatsAppButton/>
         <Footer/>
       </body>
     </html>

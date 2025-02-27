@@ -1,20 +1,4 @@
-// import React from 'react'
-// import Image from 'next/image'
 
-// const Hero = () => {
-//   return (
-//     <div className='relative w-full h-[500px] bg-black '>
-//         <div className='flex flex-col justify-center w-[50%] ml-10 h-[100%] gap-2'>
-//             <p className='text-4xl font-bold text-white '>The Vocal Powerhouse</p>
-//             <p className='text-white'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, suscipit.</p>
-//             <button className='bg-white rounded-[5px] h-[56px] w-[120px]'>Register Now</button>
-//         </div>
-//     <Image className='absolute right-20 top-1/2'  src="/assets/voicer_over_artiste.jpeg" width={400} height={500} alt='voice over artiste'/>
-//     </div>
-//   )
-// }
-
-// export default Hero     
 
 import React from 'react'
 import Image from 'next/image'
@@ -40,7 +24,7 @@ const Hero = () => {
         <p className='text-white'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, suscipit.
         </p>
-        <button className='bg-white rounded-[5px] h-[50px] w-[150px]'>Register Now</button>
+        <button className='bg-white rounded-[5px] h-[50px] w-[150px] text-black'>Register Now</button>
       </div>
 
       {/* Foreground Image */}
