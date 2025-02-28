@@ -26,7 +26,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden">
+        <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 z-10 md:hidden">
           <div className="cursor-pointer hover:text-blue-500">About Us</div>
           <div className="cursor-pointer hover:text-blue-500">Contact</div>
           <div className="cursor-pointer hover:text-blue-500">Register</div>
