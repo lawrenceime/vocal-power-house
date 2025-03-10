@@ -5,6 +5,7 @@ import React,{useEffect , useState} from 'react';
 import {useRouter} from 'next/navigation';
 import Select from 'react-select';
 import dynamic from   'next/dynamic'
+import Image from 'next/image';
 // import HeroSection from './HeroSection';
 
 const  ContactForm = () => {
@@ -47,7 +48,7 @@ const  ContactForm = () => {
         const options: Option[] = data.map((country: Country) => ({
           label: (
             <div className="flex items-center">
-              <img src={country.flags?.svg} alt={`${country.name.common} flag`} className="w-5 h-3 mr-2 " />
+              <Image src={country.flags?.svg} alt={`${country.name.common} flag`} className="w-5 h-3 mr-2 " />
               {`${country.name.common} (+${country.idd?.root || ''}${country.idd?.suffixes?.[0] || ''})`}
             </div>
           ),
@@ -73,7 +74,7 @@ const  ContactForm = () => {
     formData.set('phone', fullPhoneNumber);  // Replace phone with full number
   
     // Submit updated form data to Formspree
-    handleSubmit(formData as any);
+    handleSubmit(formData as unknown as HTMLFormElement);
   };
   
 
