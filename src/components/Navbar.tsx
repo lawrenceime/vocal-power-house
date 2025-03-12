@@ -2,12 +2,19 @@
 
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/contact')
+  }
+
   return (
-    <div className="h-16 bg-white text-black shadow-sm font-mono px-6 md:px-20 relative">
+    <div className="fixed top-0 w-full h-16 bg-white text-black shadow-sm font-mono px-6 md:px-20 z-50">
       <div className="flex justify-between items-center h-full">
         <div>Logo</div>
 
@@ -20,7 +27,7 @@ const Navbar = () => {
         <div className="hidden md:flex gap-5">
           <div className="cursor-pointer hover:text-blue-500">About Us</div>
           <div className="cursor-pointer hover:text-blue-500">Contact</div>
-          <div className="cursor-pointer hover:text-blue-500">Register</div>
+          <div onClick={handleClick} className="cursor-pointer hover:text-blue-500">Register</div>
         </div>
       </div>
 
@@ -29,7 +36,7 @@ const Navbar = () => {
         <div className="absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-4 z-10 md:hidden">
           <div className="cursor-pointer hover:text-blue-500">About Us</div>
           <div className="cursor-pointer hover:text-blue-500">Contact</div>
-          <div className="cursor-pointer hover:text-blue-500">Register</div>
+          <div onClick={handleClick} className="cursor-pointer hover:text-blue-500">Register</div>
         </div>
       )}
     </div>

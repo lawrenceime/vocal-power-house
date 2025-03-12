@@ -30,7 +30,7 @@ const Hero = () => {
       <div className='relative flex flex-col justify-center w-[50%] ml-20 h-[100%] gap-6 md:gap-2 z-10'>
       <p className='text-3xl md:text-6xl font-bold text-white'>The Vocal Powerhouse</p>
       <p className='text-white'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, suscipit.
+       Maximizing the power of your voice .
       </p>
       <button className='bg-white rounded-[5px] h-[50px] w-[150px] text-black' onClick={handleContactClick}>Register Now</button>
       </div>
