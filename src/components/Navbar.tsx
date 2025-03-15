@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,9 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 w-full h-16 bg-white text-black shadow-sm font-mono px-6 md:px-20 z-50">
       <div className="flex justify-between items-center h-full">
-        <div>Logo</div>
+        <div>
+          <Image alt="logo" src="/assets/VPH Logo 2-01.png" width={60} height={60}/>
+        </div>
 
         {/* Hamburger Button */}
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
