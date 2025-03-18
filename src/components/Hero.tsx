@@ -17,7 +17,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
       <Image 
-        src="/assets/bearded_voice_actor.jpg" 
+        src="/assets/male.jpeg" 
         layout="fill" 
         objectFit="cover" 
         alt="Hero background"
@@ -38,7 +38,7 @@ const Hero = () => {
       {/* Foreground Image */}
       <Image 
       className='hidden lg:block lg:absolute right-20 transform -translate-y-1/2 z-10'  
-      src="/assets/voicer_over_artiste.jpeg" 
+      src="/assets/female.jpeg" 
       width={400} 
       height={500} 
       alt='Voice over artiste'
