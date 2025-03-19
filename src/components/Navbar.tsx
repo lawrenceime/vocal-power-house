@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="fixed top-0 w-full h-16 bg-white text-black shadow-sm font-mono px-6 md:px-20 z-50">
       <div className="flex justify-between items-center h-full">
         <div>
-          <Image alt="logo" src="/assets/VPH Logo 2-01.png" width={60} height={60}/>
+          <Image alt="logo" src="/assets/VPH Logo 2-01.png" width={70} height={100}/>
         </div>
 
         {/* Hamburger Button */}

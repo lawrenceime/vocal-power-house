@@ -6,12 +6,12 @@ interface Course {
 }
 
 const courses: Course[] = [
-  { title: "Introduction to Voice Acting", description: "Learn the basics of voice-over work, including vocal techniques and script reading." },
-  { title: "Commercial Voice-Over", description: "Master the skills needed for radio, TV, and online commercial voice-overs." },
-  { title: "Narration & Storytelling", description: "Develop techniques for audiobook narration, documentaries, and storytelling." },
-  { title: "Character Voice Acting", description: "Learn how to create unique character voices for animation, video games, and more." },
-  { title: "Dubbing & ADR", description: "Understand the art of dubbing for films, TV shows, and animated content." },
-  { title: "Home Studio Setup", description: "Set up your own professional-quality voice-over recording space." },
+  { title: "Types of voiceover", description: "Commercials,narrations, animations, documentary, e-learning, audio books, announcing, promos and lots more" },
+  { title: "Voicing and Recording techniques", description: " Vocal health,vocal warm ups and pronunciations" },
+  { title: "Script reading and interpretation", description: "Emotion, Pace and context in script reading" },
+  { title: "Reading techniques", description: "Home studio setup, microphone techniques and recording software basics" },
+  { title: "Demo Preparation", description: "Script writing and selection" },
+  { title: "Monetizing your voice as a voiceover artist", description: " Landing your first job" },
 ]
 
 const CourseCards = () => {
